@@ -1,5 +1,20 @@
 const inputBox = document.querySelector('.input__search__wrapper');
 const input = document.querySelector('.input__search__wrapper input');
+const headerImg = document.querySelector('.header__img__wrapper img');
+
+
+document.addEventListener('DOMContentLoaded',reportWindowSize);
+
+function reportWindowSize() {
+    if(window.innerWidth >= 1000) {
+        headerImg.src = "images/bg-header-desktop.svg";
+        console.log('it is working!')
+    } else {
+        headerImg.src = "images/bg-header-mobile.svg";
+    }
+}
+
+window.onresize = reportWindowSize;
 
 const searchBtn = document.querySelector('.header__img__wrapper i');
 

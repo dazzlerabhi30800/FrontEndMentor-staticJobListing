@@ -28,7 +28,7 @@ function mainFunction(data) {
          </div>
          <div class="description__wrapper">
            <div class="tag__wrapper">
-             <h1 class="site__name">Manage</h1>
+             <h1 class="site__name">${data[i].company}</h1>
              <button class="new ${data[i].new}">NEW!</button>
              <button class="featured ${data[i].featured}">FEATURED</button>
            </div>
